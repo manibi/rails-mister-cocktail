@@ -10,6 +10,13 @@
     <div style= "text-align: center; text-decoration: none;">
       <%= link_to "Create new Cocktails", new_cocktail_path %>
     </div>
+
+    <%= cl_image_tag("THE_IMAGE_ID_FROM_LIBRARY",
+      width: 400, height: 300, crop: :fill) %>
+
+    <%= cl_image_tag("IMAGE_WITH_FACE_ID",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
   </div>
 </div>
 
