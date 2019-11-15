@@ -1,0 +1,15 @@
+<div class="container mx-auto mt-3" style="width: 60%">
+  <h1 style="text-align: center">Cocktails</h1>
+
+  <div class="p-2" style="margin: 50px; background-color: white); box-shadow: 0px 0px 10px rgba(0,0,0,.2)">
+    <ul class= "list-unstyled pl-3">
+    <% @cocktails.each do |cocktail| %>
+      <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+    <% end %>
+    </ul>
+    <div style= "text-align: center; text-decoration: none;">
+      <%= link_to "Create new Cocktails", new_cocktail_path %>
+    </div>
+  </div>
+</div>
+
